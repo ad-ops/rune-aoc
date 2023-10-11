@@ -1,0 +1,20 @@
+[package]
+name = "rune-aoc"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "rune"
+path = "src/rune.rs"
+
+[[bin]]
+name = "rust"
+path = "src/rust.rs"
+
+[dependencies]
+anyhow = "1.0.75"
+rune = { version = "0.13.1" }
+rune-modules = { version = "0.13.1", features = ["fs"] }
+tokio = { version = "1.33.0", features = ["full"] }
